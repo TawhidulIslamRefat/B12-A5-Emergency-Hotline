@@ -23,5 +23,59 @@
     <!-- Font Awesome CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body></body>
+  <body class="bg-[#F5FFF6]">
+    <!-- header section start -->
+     <header>
+        <!-- nav section start -->
+         <nav id="nav-bar" class="max-w-[1600px] mx-auto flex justify-between items-center my-[25px] ">
+            <div id="" class="nav-left-side-content flex justify-center  items-center gap-1">
+                <img src="./assets/logo.png" alt="logo" id="nav-logo" class="w-[50px]">
+                <h2 class="text-[#006747] font-bold text-2xl">Emergency <br>Service</h2>
+            </div>
+            <div class="nav-right-side-content flex items-center gap-10 ">
+                <div class="heart bg-[#41ff6b1a] flex gap-1 py-[10px] px-[35px] rounded-[50px]">
+                    <span id="count-heart" class="font-[900] text-[#000] text-xl">0</span><img src="./assets/heart.png" alt="heart" class="w-[30px]">  
+                </div>
+                <div class="coin flex bg-[#41ff6b1a] gap-1 py-[10px] px-[35px] rounded-[50px]">
+                    <span id="total-coin" class="font-[900] text-[#000] text-xl">100</span><img src="./assets/coin.png" alt="coin" class="w-[30px]">
+                </div>
+                <div class="copy flex bg-[#00A63E] gap-1 py-[10px] px-[35px] rounded-[50px]">
+                     <span id="count-copy" class="text-white fotn-[600] text-xl">0</span>
+                     <p class="text-white fotn-[600] text-xl">Copy</p>
+                </div>
+            </div>
+         </nav>
+         <!-- hero section start -->
+          <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-7">
+            <div>
+                <img src="./assets/logo-dark.png" alt="hero-logo" class="max-w-2xs  mx-auto">
+            </div>
+            <h1 class="text-[2.6rem] font-bold text-white text-center my-3">Emergency Service Directory</h1>
+            <h2 class="text-[1.3rem]  font-semibold text-[white] text-center" >Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</h2>
+          </section>
+     </header>
+     <!-- start main section -->
+      <!-- card container -->
+       <section id="card-container" class="bg-[#F5FFF6] w-11/12 mx-auto grid grid-cols-12 gap-7">
+        <section id="cards" class=" col-span-9">
+         <div class="cards-container">
+            <div id="card">
+                <div class="flex  items-center mb-4">
+                    <div class="bg-[#FFE3E2] p-3.5 rounded-2xl"><img src="./assets/emergency.png" alt="" class="max-w-8"></div>
+                    <div><img class="heart " src="./assets/heart1.png" alt=""></div>
+                </div>
+                <h2 class="font-bold text-[1.4rem]">National Emergency Number</h2>
+                <p class="text-[1.2rem] text-[#5C5C5C] mb-6">National Emergency</p>
+                <h1 id="national-emergency-number" class="text-[2.1rem] font-bold text-black mb-1">999</h1>
+                <p class="bg-gray-100 inline py-2 px-3 rounded-xl text-[#5C5C5C] text-[1.2rem] ">All</p>
+                
+            </div>
+         </div>
+           
+        </section>
+        <aside id="history-container" class="bg-green-400 h-6 col-span-3">
+
+        </aside>
+       </section>
+  </body>
 </html>
