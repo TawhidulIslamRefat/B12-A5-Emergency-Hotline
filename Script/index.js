@@ -75,3 +75,15 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   const historyContainer = getElementById("history-container");
   historyContainer.innerHTML = "";
 });
+/* copy button funtion */
+const copyButtons = getElementByClassName("copy-btn");
+for (const copyButton of copyButtons) {
+  copyButton.addEventListener("click",function(){
+    const serviceNumber = copyButton.parentNode.parentNode.children[3].innerText;
+    const countCopy = getElementById("count-copy").innerText;
+    const currentCountCopy = Number(countCopy) + 1;
+     getElementById("count-copy").innerText = currentCountCopy;
+     navigator.clipboard.writeText(serviceNumber);
+     alert("©️"+" "+"Copied Number :" +" "+serviceNumber);
+  })
+}
