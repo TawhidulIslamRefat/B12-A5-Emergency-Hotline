@@ -64,7 +64,7 @@ for (const callButton of callButtons) {
       alert(
         "❌" +
           " " +
-          "Invalid Balance,you need at least 20 coins to make a call..."
+          "You don't have enough coins,you need at least 20 coins to make a call..."
       );
       totalCoin.innerText = 0;
     }
