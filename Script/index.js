@@ -50,7 +50,7 @@ for (const callButton of callButtons) {
       newcard.innerHTML = `
           <div class="flex justify-between items-center bg-[#FAFAFA] pt-4 pb-5 pl-4 pr-2 rounded-[8px] mb-3" >
                 <div class=" ">
-                <h1 class="text-xl font-semibold">${serviceName}</h1>
+                <h1 class="text-[1.2rem] font-semibold ">${serviceName}</h1>
                 <h2 class="text-[1.2rem] text-[#5C5C5C]">${serviceNumber}</h2>
                
             </div>
